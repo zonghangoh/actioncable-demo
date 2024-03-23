@@ -1,0 +1,8 @@
+<!-- app/views/chatrooms/show.html.erb -->
+<div class="container chatroom">
+  <div class="messages">
+    <% @chatrooms.each do |chatroom| %>
+      <%= link_to chatroom.name, chatroom %>
+    <% end %>
+  </div>
+</div>
